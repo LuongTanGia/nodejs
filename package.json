@@ -2,9 +2,10 @@
     "name": "nodejs",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "src/index.js",
     "scripts": {
-        "start": "nodemon --inspect index.js",
+        "start": "nodemon --inspect src/index.js",
+        "watch": "sass --watch src/resources/scss/app.scss src/public/css/app.css",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -23,10 +24,13 @@
     },
     "homepage": "https://github.com/LuongTanGia/nodejs_block#readme",
     "dependencies": {
-        "express": "^4.18.2"
+        "express": "^4.18.2",
+        "express-handlebars": "^6.0.6"
     },
     "devDependencies": {
         "morgan": "^1.10.0",
-        "nodemon": "^2.0.20"
+        "node-sass": "^8.0.0",
+        "nodemon": "^2.0.20",
+        "sass": "^1.57.1"
     }
 }
